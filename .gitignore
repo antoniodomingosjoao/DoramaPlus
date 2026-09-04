@@ -12,3 +12,13 @@ Thumbs.db
 .env
 .env.*
 !.env.example
+.alcache/
+.alpackages/
+.snapshots/
+.output/
+*.app
+rad.json
+*.g.xlf
+*.bclicense
+*.flf
+TestResults.xml
