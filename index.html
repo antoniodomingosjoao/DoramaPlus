@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DramaPlus, seu novo lugar para descobrir mini séries asiáticas." />
+    <title>DramaPlus | Mini séries que ficam com você</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="dynamic.css" />
+</head>
+
+<body>
+    <header class="topbar">
+        <a class="brand" href="#inicio" aria-label="DramaPlus início"><span class="brand-mark">D</span><span>Drama<span
+                    class="brand-accent">Plus</span></span></a>
+        <nav class="main-nav" aria-label="Navegação principal">
+            <a class="nav-link active" href="#inicio">Início</a>
+            <a class="nav-link" href="#catalogo">Explorar</a>
+            <a class="nav-link" href="#minha-lista">Minha lista <span class="list-count">3</span></a>
+        </nav>
+        <div class="header-actions">
+            <button class="icon-button" id="searchToggle" aria-label="Abrir busca" title="Buscar">⌕</button>
+            <button class="profile-button" aria-label="Abrir perfil"><span>AF</span><i></i></button>
+        </div>
+        <div class="search-box" id="searchBox"><input id="searchInput" type="search"
+                placeholder="Buscar por título, gênero..." aria-label="Buscar por título, gênero" /></div>
+    </header>
+
+    <main id="inicio">
+        <section class="hero" aria-label="Série em destaque">
+            <div class="hero-image"></div>
+            <div class="hero-shade"></div>
+            <div class="hero-copy">
+                <div class="eyebrow"><span class="eyebrow-line"></span> DramaPlus original · 2024</div>
+                <h1>Entre o destino<br /><em>e o coração.</em></h1>
+                <p class="hero-description">Quando duas vidas se cruzam por acaso, o amor ganha novos capítulos. Uma
+                    história delicada sobre recomeços, escolhas e aquilo que não conseguimos esquecer.</p>
+                <div class="hero-meta"><span class="rating">★ 9,2</span><span>Romance</span><span>12
+                        episódios</span><span>16+</span></div>
+                <div class="hero-buttons"><button class="primary-button play-trigger"><span class="play-icon">▶</span>
+                        Assistir agora</button><button class="secondary-button add-trigger"><span
+                            class="plus-icon">＋</span> Minha lista</button></div>
+            </div>
+            <div class="hero-rail"><span class="rail-label">Em destaque</span><button class="rail-dot active"
+                    aria-label="Slide 1"></button><button class="rail-dot" aria-label="Slide 2"></button><button
+                    class="rail-dot" aria-label="Slide 3"></button></div>
+        </section>
+
+        <section class="content-section intro-section">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">Escolhidos para você</p>
+                    <h2>Histórias para sentir <span>sem pressa.</span></h2>
+                </div><a href="#catalogo" class="see-all">Ver catálogo <span>→</span></a>
+            </div>
+            <div class="genre-tabs" role="tablist"><button class="genre-tab active"
+                    data-filter="todos">Todos</button><button class="genre-tab"
+                    data-filter="romance">Romance</button><button class="genre-tab"
+                    data-filter="comedia">Comédia</button><button class="genre-tab"
+                    data-filter="misterio">Mistério</button><button class="genre-tab"
+                    data-filter="historico">Histórico</button></div>
+            <div class="poster-row" id="catalogo">
+                <article class="poster-card" data-genre="romance" data-title="Aquele verão em Seul"
+                    data-description="Um encontro inesperado transforma um verão comum em uma memória impossível de apagar."
+                    data-color="#bf6656">
+                    <div class="poster-image poster-one"><span class="poster-badge">NOVO</span><button
+                            class="card-play play-trigger" aria-label="Assistir Aquele verão em Seul">▶</button></div>
+                    <div class="card-info">
+                        <h3>Aquele verão<br />em Seul</h3>
+                        <p>Romance · 8 episódios</p><button class="card-more" aria-label="Adicionar à lista">＋</button>
+                    </div>
+                </article>
+                <article class="poster-card" data-genre="comedia" data-title="Meu vizinho é um astro"
+                    data-description="Ele é famoso. Ela prefere o silêncio. O novo apartamento deles só tem uma regra: não se apaixonar."
+                    data-color="#d49b58">
+                    <div class="poster-image poster-two"><span class="poster-badge">POPULAR</span><button
+                            class="card-play play-trigger" aria-label="Assistir Meu vizinho é um astro">▶</button></div>
+                    <div class="card-info">
+                        <h3>Meu vizinho<br />é um astro</h3>
+                        <p>Comédia · 10 episódios</p><button class="card-more" aria-label="Adicionar à lista">＋</button>
+                    </div>
+                </article>
+                <article class="poster-card" data-genre="historico" data-title="A carta da imperatriz"
+                    data-description="Uma carta perdida no tempo pode mudar o destino de um reino inteiro e de dois corações."
+                    data-color="#7d5363">
+                    <div class="poster-image poster-three"><span class="poster-badge">EXCLUSIVO</span><button
+                            class="card-play play-trigger" aria-label="Assistir A carta da imperatriz">▶</button></div>
+                    <div class="card-info">
+                        <h3>A carta<br />da imperatriz</h3>
+                        <p>Histórico · 16 episódios</p><button class="card-more"
+                            aria-label="Adicionar à lista">＋</button>
+                    </div>
+                </article>
+                <article class="poster-card" data-genre="misterio" data-title="O último bilhete"
+                    data-description="Todos na estação escondem um segredo. Um bilhete anônimo vai revelar o mais perigoso deles."
+                    data-color="#40596b">
+                    <div class="poster-image poster-four"><span class="poster-badge">NOVO</span><button
+                            class="card-play play-trigger" aria-label="Assistir O último bilhete">▶</button></div>
+                    <div class="card-info">
+                        <h3>O último<br />bilhete</h3>
+                        <p>Mistério · 6 episódios</p><button class="card-more" aria-label="Adicionar à lista">＋</button>
+                    </div>
+                </article>
+                <article class="poster-card" data-genre="romance" data-title="O som do nosso café"
+                    data-description="Um café pequeno, uma playlist compartilhada e o som de duas pessoas encontrando seu ritmo."
+                    data-color="#9f654c">
+                    <div class="poster-image poster-five"><button class="card-play play-trigger"
+                            aria-label="Assistir O som do nosso café">▶</button></div>
+                    <div class="card-info">
+                        <h3>O som do<br />nosso café</h3>
+                        <p>Romance · 12 episódios</p><button class="card-more" aria-label="Adicionar à lista">＋</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="continue-section" id="minha-lista">
+            <div class="continue-head">
+                <div>
+                    <p class="section-kicker">Seu momento</p>
+                    <h2>Continue de onde parou</h2>
+                </div><span class="progress-label">1 de 3 séries em andamento</span>
+            </div>
+            <div class="continue-card">
+                <div class="continue-art"></div>
+                <div class="continue-copy">
+                    <p class="mini-label">Episódio 05 · 42 min restantes</p>
+                    <h3>Quando a primavera<br />chegar</h3>
+                    <div class="progress-track"><span></span></div>
+                    <div class="continue-footer"><span>32% concluído</span><button
+                            class="text-button play-trigger">Continuar assistindo <span>→</span></button></div>
+                </div><button class="continue-play play-trigger" aria-label="Continuar assistindo">▶</button>
+            </div>
+        </section>
+
+        <section class="content-section bottom-section">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">Para maratonar</p>
+                    <h2>Mini séries em alta</h2>
+                </div><a href="#catalogo" class="see-all">Ver todas <span>→</span></a>
+            </div>
+            <div class="ranking-row">
+                <div class="ranking-item"><span class="ranking-number">01</span>
+                    <div class="mini-poster mini-one"></div>
+                    <div>
+                        <h3>A flor que floresce à noite</h3>
+                        <p>Romance · Coreia do Sul</p>
+                    </div>
+                </div>
+                <div class="ranking-item"><span class="ranking-number">02</span>
+                    <div class="mini-poster mini-two"></div>
+                    <div>
+                        <h3>Amor em segundo plano</h3>
+                        <p>Drama · Japão</p>
+                    </div>
+                </div>
+                <div class="ranking-item"><span class="ranking-number">03</span>
+                    <div class="mini-poster mini-three"></div>
+                    <div>
+                        <h3>O contrato de outono</h3>
+                        <p>Comédia · China</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer><a class="brand footer-brand" href="#inicio"><span class="brand-mark">D</span><span>Drama<span
+                    class="brand-accent">Plus</span></span></a>
+        <p>Boas histórias encontram você.</p><span class="footer-note">© 2024 DramaPlus</span>
+    </footer>
+    <div class="modal" id="watchModal" aria-hidden="true">
+        <div class="modal-backdrop"></div>
+        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button
+                class="close-modal" aria-label="Fechar">×</button>
+            <div class="video-placeholder">
+                <div class="video-orb">▶</div><span>Prévia do episódio</span>
+            </div>
+            <div class="modal-details">
+                <p class="section-kicker">Agora assistindo</p>
+                <h2 id="modalTitle">Entre o destino e o coração.</h2>
+                <p>O primeiro episódio está pronto para começar. Prepare o chá e aproveite.</p><button
+                    class="primary-button"><span class="play-icon">▶</span> Começar episódio</button>
+            </div>
+        </div>
+    </div>
+    <script src="firebase-config.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
