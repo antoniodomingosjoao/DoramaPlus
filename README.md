@@ -27,3 +27,23 @@ firebase deploy --only hosting
 ```
 
 O dominio esperado e `https://gen-lang-client-0216425764.web.app`.
+
+## Publicacao automatica
+
+O repositorio oficial e `https://github.com/antoniodomingosjoao/DoramaPlus`.
+
+Na Netlify, o site deve estar conectado a esse repositorio com:
+
+- Branch de producao: `main`
+- Diretorio de publicacao: `.`
+- Build command: vazio
+
+Depois de conectar, cada `push` na branch `main` gera um novo deploy automaticamente. Para publicar uma alteracao local:
+
+```bash
+git add .
+git commit -m "descreva a alteracao"
+git push origin main
+```
+
+O arquivo `netlify.toml` ja deixa o diretorio e o fallback das rotas configurados.
